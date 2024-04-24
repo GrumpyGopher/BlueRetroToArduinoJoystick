@@ -6,6 +6,7 @@ There are two versions of this sketch for 4 player and 6 player.
 In order to have 6 Joysticks enabled at the same time CDC must be disabled
 for Arduino Pro Micro this can be done by adding -DCDC_DISABLED to the extra_flags line in the boards.txt file
 example:  leonardo.build.extra_flags={build.usb_flags}  -DCDC_DISABLED
+
 **Note:** this will disable serial communication through usb so you will need to program the board another way sometimes holding reset and waiting for the Arduino IDE to say uploading before releasing the reset button will work
 
 If you do not want to disable CDC you can do up to 4 players without disabling CDC
